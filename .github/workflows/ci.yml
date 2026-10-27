@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '26'
+
+      - name: Set up pnpm
+        uses: pnpm/setup@v3
+
+      - name: Setup dependencies
+        run: make setup
+
+      - name: Run linter
+        run: make lint
+
+      - name: Run tests
+        run: make test
