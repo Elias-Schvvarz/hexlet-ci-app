@@ -2,7 +2,7 @@
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
 
-### Github Actions badge
+## Github Actions badge
 
 [![Node CI](https://github.com/Elias-Schvvarz/hexlet-ci-app/actions/workflows/main.yml/badge.svg)](https://github.com/Elias-Schvvarz/hexlet-ci-app/actions/workflows/main.yml)
 

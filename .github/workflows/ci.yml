@@ -29,4 +29,4 @@ jobs:
         run: make test
 
       - name: Hexlet-components
-        run: hexlet-components/hello-from-hexlet-action@release
+        uses: hexlet-components/hello-from-hexlet-action@release
